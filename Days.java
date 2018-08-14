@@ -20,7 +20,7 @@ public class Days{
 				switch(thn%100){
 					case 0: {
 						switch(bln){
-							case 2: System.out.println("29 hari"); break;
+							case 2: System.out.println("28 hari"); break;
 							case 1: 
 							case 3:
 							case 5:
