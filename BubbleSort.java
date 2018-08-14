@@ -3,10 +3,20 @@ public class BubbleSort {
 		for(int i = 0; i < count; i++){
 			for(int j = 0; j < i; j++){
 				if(passedArray[i] <= passedArray[j]){
-					//Perform swap
-					passedArray[i] = passedArray[i] * passedArray[j];
-			        passedArray[j] = passedArray[i] / passedArray[j];
-        			passedArray[i] = passedArray[i] / passedArray[j];
+					////Swapping using multiplication/division - buggy when any item(s) is/are 0
+					//passedArray[i] = passedArray[i] * passedArray[j];
+					//passedArray[j] = passedArray[i] / passedArray[j];
+					//passedArray[i] = passedArray[i] / passedArray[j];
+
+					////Swapping using XOR
+					//passedArray[i] = passedArray[i] ^ passedArray[j];
+					//passedArray[j] = passedArray[i] ^ passedArray[j];
+					//passedArray[i] = passedArray[i] ^ passedArray[j];
+
+					//Swapping using addition/substraction
+					passedArray[i] = passedArray[i] + passedArray[j];
+					passedArray[j] = passedArray[i] - passedArray[j];
+					passedArray[i] = passedArray[i] - passedArray[j];
 				}
 			}
 		}
