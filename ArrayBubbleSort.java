@@ -28,10 +28,14 @@ public class ArrayBubbleSort {
 				}
 			}
 
+			// for (int i = 1; i < arrayBubble.length; i++) {
+			// System.out.print(arrayBubble[i] + " ");
+			//}
+			//System.out.println("");
 		} while (swapped != 0);
 
 		for (int i = 1; i < arrayBubble.length; i++) {
-			System.out.println(arrayBubble[i] + " ");
+			System.out.print(arrayBubble[i] + " ");
 		}
 	}
 }
