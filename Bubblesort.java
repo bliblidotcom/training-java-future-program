@@ -21,9 +21,9 @@ public class Bubblesort {
             for(int j = 0; j < inputs.length; j++)
             {
                 if(inputs[j] > inputs[i]){
-                    inputs[j] *= inputs[i];
-                    inputs[i] = inputs[j]/inputs[i];
-                    inputs[j] = inputs[j]/inputs[i];
+                    inputs[j] += inputs[i];
+                    inputs[i] = inputs[j]-inputs[i];
+                    inputs[j] = inputs[j]-inputs[i];
                 }
             }
         }
