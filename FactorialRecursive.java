@@ -1,5 +1,4 @@
 
-
 public class FactorialRecursive {
 
 	public static  int factorial(int n){
