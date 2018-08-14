@@ -8,20 +8,15 @@ public class Recursive {
         else{
             int score = Integer.parseInt(args[0]);
             int hasilFactorial = score;
-            System.out.println(scoring(hasilFactorial, score));
+            System.out.println(scoring(score));
         }
         
     }
 
-    public static int scoring(int hasilFactorial, int score)
+    public static int scoring(int score)
     {
-        score--;
-        if(score == 0)
-            return (hasilFactorial);
-        else
-        {
-            hasilFactorial *= score;
-        }
-        return scoring(hasilFactorial, score);
+        if(score > 0)
+            return score * scoring(score-1);
+        return score;
     }
 }
