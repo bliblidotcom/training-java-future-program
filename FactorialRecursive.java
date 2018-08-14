@@ -1,10 +1,9 @@
 public class FactorialRecursive {
 	private Integer recursive(Integer number){
-		if(number > 1){
+		if(number > 0){
 			return number * recursive(number - 1);
-		} else {
-			return 1;
 		}
+		return 1;
 	}
 
 	public FactorialRecursive(Integer number){
